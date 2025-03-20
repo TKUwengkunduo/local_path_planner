@@ -1,0 +1,41 @@
+# Maximum linear velocity (m/s)
+max_linear_velocity: 0.3
+
+# Minimum linear velocity (m/s)
+min_linear_velocity: 0.0
+
+# Maximum angular velocity (rad/s)
+max_angular_velocity: 1.2
+
+# Linear velocity resolution for sampling (m/s)
+linear_velocity_resolution: 0.1
+
+# Angular velocity resolution for sampling (rad/s)
+angular_velocity_resolution: 0.1
+
+# Time interval (s) for simulation and planning
+dt: 0.1
+
+# Prediction time (s) for trajectory simulation
+predict_time: 3.0
+
+# Robot's safety radius (m), used for collision checking and drawing
+robot_radius: 0.5
+
+# Weight for goal distance in cost function
+weight_goal: 1.0
+
+# Weight for velocity in cost function
+weight_velocity: 0.1
+
+# Weight for obstacle distance in cost function
+weight_obstacle: 1.0
+
+# Weight for heading error in cost function (used to penalize mismatch between robot's final heading and the direction toward the goal)
+weight_heading: 0.0
+
+# Enable control space limitation when goal is behind (True/False)
+limit_control_enabled: true
+
+# Maximum allowed linear velocity when goal is behind (m/s)
+limited_linear_velocity: 0.1
